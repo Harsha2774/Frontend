@@ -1,0 +1,68 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Layout Styling */
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 25%;
+    background: #ff9a9e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Main Content Styling */
+.content {
+    width: 75%;
+    background: #ffdde1;
+    color: black;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .sidebar, .content {
+        width: 100%;
+        margin: 0; /* Remove margin for better spacing */
+    }
+}

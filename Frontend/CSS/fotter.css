@@ -1,0 +1,13 @@
+/* Footer Styling */
+footer {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 15px 0; /* Top and bottom padding */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}

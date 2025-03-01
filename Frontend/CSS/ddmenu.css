@@ -1,0 +1,108 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #85f390, #f4a893);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #47cbff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Navigation Items */
+.nav-list li {
+    position: relative;
+    margin: 0 15px;
+}
+
+/* Navigation Links */
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+/* Hover Effect on Links */
+.nav-list a:hover {
+    background: #233ed8;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+/* Dropdown Links */
+.dropdown-menu a {
+    color: #333;
+    padding: 12px;
+    font-size: 16px;
+    display: block;
+}
+
+/* Hover Effect on Dropdown Items */
+.dropdown-menu a:hover {
+    background: #f8b4c6;
+    color: #000;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Add Dropdown Arrow */
+.dropdown > a {
+    position: relative;
+}
+
+/* Arrow Effect */
+.dropdown > a::after {
+    content: " ▼";
+    font-size: 14px;
+    color: white;
+    margin-left: 5px;
+}

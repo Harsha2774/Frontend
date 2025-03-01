@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;  /* Changing font */
+    background-color: #f4f4f4;       /* Light gray background */
+    color: #333;                     /* Dark text color */
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;  /* Blue heading */
+}
+
+ul {
+    list-style-type: square; /* Changing bullet style */
+}
+
+li {
+    font-size: 18px; /* Making list items bigger */
+}

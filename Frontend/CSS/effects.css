@@ -1,0 +1,29 @@
+/* General Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #38afff, #fad0c4);
+    font-family: Arial, sans-serif;
+}
+
+/* Button Styling */
+.hover-button {
+    background: #52d570;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out; /* Smooth effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.hover-button:hover {
+    background: #ec0303;
+    transform: scale(1.1); /* Increases size */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}

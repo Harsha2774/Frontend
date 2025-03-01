@@ -1,0 +1,66 @@
+/* General Styles */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4fb3f6, #ff5e62);
+    color: white;
+    margin: 0;
+    padding: 50px 0;
+}
+
+/* Heading */
+h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+/* Bouncing Ball */
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Ball Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+/* Animated Logo */
+.logo {
+    width: 150px;
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fadeInMove 3s ease forwards;
+}
+
+/* Logo Animation */
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+/* Move text slightly down */
+.container {
+    margin-top: 150px; /* Adjust this value to move text further down */
+}

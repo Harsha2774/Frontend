@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scroll Navigation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for Smooth Scrolling -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 100px 0;
+            min-height: 100vh;
+        }
+        .navbar {
+            transition: background-color 0.5s;
+        }
+        .navbar.scrolled {
+            background-color: #343a40 !important;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="bg-light text-center">
+        <div class="container">
+            <h1>Home</h1>
+            <p>Welcome to our homepage!</p>
+        </div>
+    </section>
+
+    <section id="about" class="bg-secondary text-white text-center">
+        <div class="container">
+            <h1>About</h1>
+            <p>Learn more about us.</p>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light text-center">
+        <div class="container">
+            <h1>Services</h1>
+            <p>Discover our services.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-secondary text-white text-center">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Get in touch with us.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    <!-- Custom JS for Navbar Background Change on Scroll -->
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('scrolled');
+                } else {
+                    $('.navbar').removeClass('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
